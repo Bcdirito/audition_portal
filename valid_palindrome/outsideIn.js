@@ -1,20 +1,23 @@
-// Runtime 100ms, Memory Usage 39.8MB
+// Runtime 88ms, Memory Usage 38.6MB
 // Check outside in
 
 function palindromeCheck(str) {
     if (str){
-        // filter out punctuation and spaces
+        // filter out all spaces and make all letters the same case
         // change all letters to lower case so they can match if same letter
-        let filtStr = str.toLowerCase().match(/[a-zA-Z]/g) 
+        let filtStr = str.toLowerCase().match(/[a-z]/g) 
         // join into one string
         filtStr = filtStr.join("")
+        let midIndex;
+
+        // get middleIndex, because we if we make it to the middle and all checks out, the string is good to go.
         if (filtStr.length % 2 === 0){
-            let midIndex = (filtStr.length / 2) - 1
+            midIndex = (filtStr.length / 2) - 1
         } else {
-            let midIndex = (filtStr.length - 1) / 2
+            midIndex = (filtStr.length - 1) / 2
         }
         // filter through the string
-        for (let i = 0; i < filtStr.length; i++){
+        for (let i = 0; i <= midIndex; i++){
             // declare variable to check last index
             let l = i + 1
             // check if letters in opposite positions match

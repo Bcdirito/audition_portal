@@ -3,7 +3,9 @@
 
 function palindromeCheck(str){
     if (str){
-        let filtStr = s.toLowerCase().match(/[a-z0-9]/g)
+        // filter out all spaces and make all letters the same case
+        let filtStr = s.toLowerCase().match(/[a-z]/g)
+        // check if any letters left
         if (filtStr){
             return filtStr.join("") === filtStr.reverse().join("")
         } else {
