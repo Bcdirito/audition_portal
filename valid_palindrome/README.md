@@ -16,5 +16,3 @@ For this exercise, we will assume no punctuation, but there will still be spaces
 "Do Geese See God" - True
 
 "Race a car" - False
-
-
