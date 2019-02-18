@@ -8,5 +8,3 @@ Given an array "a", rotate the contents of that array "d" indices to the left
 [a, b, d, e, c, g], 6 -> [a, b, d, e, c, g]
 
 [2, 4, 5, 6, 1, 0, 12], 2 -> [5, 6, 1, 0, 12, 2, 4]
-
-
