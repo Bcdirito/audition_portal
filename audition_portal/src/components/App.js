@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        Loaded
+        Loaded the Page Content
       </div>
     )
   }
