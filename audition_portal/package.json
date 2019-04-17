@@ -4,8 +4,14 @@
   "description": "A portal to connect actors and casting to help streamline the process and enrich communication",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-dev": "webpack -d --watch",
+    "start": "node server/index.js",
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bcdirito/audition_portal"
   },
   "author": "Brian DiRito",
   "license": "ISC",
@@ -22,6 +28,8 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
